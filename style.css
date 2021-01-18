@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(212, 0, 131), rgb(11, 2, 27));
+  }
+
+  .container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background-color: rgba(27, 6, 39, 0.815);
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    box-shadow: 10px 10px 10px rgba(4, 1, 31, 0.185);
+  }
+  
+  .logo {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 15rem;
+    z-index: 2;
+    transition: all 1s ease-out;
+  }
+
+  .circle {
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .info h1 {
+    color: rgb(238, 231, 231);
+    font-size: 2rem;
+    transition: all 1s ease-out;
+  }
+
+  .info h3 {
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    color: rgb(206, 201, 201);
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+  }
+
+  .info span {
+      color:  rgb(255, 0, 157);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-out;
+  }
+
+  nav .button {
+      text-decoration: none;
+    padding: 0.5rem 2rem;
+    background-color: rgba(94, 91, 91, 0.603);
+    border: none;
+    box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+  }
+ 
+  .contacts {
+    margin-top: 5rem;
+    transition: all 1s ease-out;
+  }
+
+  .contacts button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: rgb(241, 234, 234);
+    border: none;
+    color: rgb(20, 19, 20);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+  }
