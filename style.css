@@ -1,112 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 1000px;
-    background-image: linear-gradient(to bottom right, rgb(212, 0, 131), rgb(11, 2, 27));
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
-  .container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(212, 0, 131),
+    rgb(11, 2, 27)
+  );
+}
 
-  .card {
-    background-color: rgba(27, 6, 39, 0.815);
-    transform-style: preserve-3d;
-    min-height: 80vh;
-    width: 35rem;
-    border-radius: 20px;
-    padding: 1rem 3rem;
-    box-shadow: 10px 10px 10px rgba(4, 1, 31, 0.185);
-  }
-  
-  .logo {
-    min-height: 35vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .logo img {
-    width: 15rem;
-    z-index: 2;
-    transition: all 1s ease-out;
-  }
+.card {
+  background-color: rgba(27, 6, 39, 0.815);
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 20px;
+  padding: 1rem 3rem;
+  box-shadow: 10px 10px 10px rgba(4, 1, 31, 0.185);
+  transition: all 1s ease-out;
+}
 
-  .circle {
-    width: 15rem;
-    height: 15rem;
-    background-color: black;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .info h1 {
-    color: rgb(238, 231, 231);
-    font-size: 2rem;
-    font-weight: 400;
-    transition: all 1s ease-out;
-  }
+.logo {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .info h3 {
-    font-size: 1.3rem;
-    padding: 1rem 0rem;
-    color: rgb(206, 201, 201);
-    font-weight:100;
-    transition: all 1s ease-out;
-  }
+.logo img {
+  width: 15rem;
+  z-index: 2;
+  transition: all 1s ease-out;
+}
 
-  .info span {
-      color:  rgb(255, 0, 157);
-  }
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    transition: all 1s ease-out;
-  }
+.info h1 {
+  color: rgb(238, 231, 231);
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 1s ease-out;
+}
 
-  nav .button {
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-    background-color: rgba(94, 91, 91, 0.603);
-    border: none;
-    box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.2);
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 400;
-    color:  rgb(255, 255, 255);
-  }
- 
-  .contacts {
-    margin-top: 5rem;
-    transition: all 1s ease-out;
-  }
+.info h3 {
+  font-size: 1.3rem;
+  padding: 1rem 0rem;
+  color: rgb(206, 201, 201);
+  font-weight: 100;
+  transition: all 1s ease-out;
+}
 
-  .contacts button {
-    width: 100%;
-    padding: 1rem 0rem;
-    background-color: rgb(241, 234, 234);
-    border: none;
-    color: rgb(20, 19, 20);
-    cursor: pointer;
-    border-radius: 30px;
-    font-weight: 400;
-  }
+.info span {
+  color: rgb(255, 0, 157);
+}
 
-  .contacts :hover {
-    background-color:  rgb(255, 0, 157);
-    color: white;
-  }
+.contacts,
+.portfolio,
+.cv {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.contacts a,
+.portfolio a,
+.cv a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background-color: rgba(241, 234, 234, 0.795);
+  border: none;
+  color: rgb(20, 19, 20);
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+  z-index: 0;
+}
+
+.portfolio :hover {
+  background-color: rgb(255, 0, 157);
+  color: white;
+  border: none;
+}
+
+.cv :hover {
+  background-color: rgb(226, 211, 0);
+  color: white;
+}
+
+.contacts :hover {
+  background-color: rgb(21, 134, 240);
+  color: white;
+}
