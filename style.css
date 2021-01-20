@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0%;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -28,7 +28,7 @@ body {
 .card {
   background-color: rgba(27, 6, 39, 0.815);
   transform-style: preserve-3d;
-  min-height: 80vh;
+  max-height: 80vh;
   width: 35rem;
   border-radius: 20px;
   padding: 1rem 3rem;
@@ -59,6 +59,7 @@ body {
 }
 
 .info h1 {
+  text-align: center;
   color: rgb(238, 231, 231);
   font-size: 2rem;
   font-weight: 400;
@@ -66,6 +67,9 @@ body {
 }
 
 .info h3 {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
   font-size: 1.3rem;
   padding: 1rem 0rem;
   color: rgb(206, 201, 201);
@@ -88,14 +92,15 @@ body {
 .contacts a,
 .portfolio a,
 .cv a {
+  box-shadow: 10px 10px 10px rgba(4, 1, 31, 0.329);
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   padding: 0.5rem 2rem;
-  background-color: rgba(241, 234, 234, 0.795);
+  background-color: rgb(255, 255, 255);
   border: none;
-  color: rgb(20, 19, 20);
+  color: rgb(15, 1, 15);
   cursor: pointer;
   border-radius: 30px;
   font-weight: 400;
@@ -110,11 +115,11 @@ body {
 }
 
 .cv :hover {
-  background-color: rgb(226, 211, 0);
+  background-color: rgb(245, 231, 37);
   color: white;
 }
 
 .contacts :hover {
-  background-color: rgb(21, 134, 240);
+  background-color: rgb(51, 179, 253);
   color: white;
 }
