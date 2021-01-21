@@ -1,0 +1,93 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(212, 0, 131),
+    rgb(11, 2, 27)
+  );
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: auto;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  min-width: ;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section nav {
+  background-color: rgba(27, 6, 39, 0.815);
+  border-radius: 0 0 30px 30px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.home {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  color: rgb(15, 1, 15);
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.home:hover {
+  background-color: rgb(255, 0, 157);
+  color: white;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+}
+
+.artsnav a {
+  padding-left: 2rem;
+}
+
+.artsnav :hover {
+  color: rgb(255, 0, 157);
+}
+
+.visualizations {
+  margin-top: 1rem;
+  background-color: rgba(27, 6, 39, 0.644);
+  border-radius: 30px;
+  height: auto;
+  padding: 2rem;
+}
+
+.visualizations img {
+  width: 100%;
+  padding-top: 1rem;
+}

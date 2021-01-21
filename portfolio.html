@@ -3,19 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
   </head>
+
   <body>
-    <h1>PORTFOLIO</h1>
+    <div class="container">
+      <div class="section">
+        <nav>
+          <a href="./index.html">
+            <button class="home"><i class="fa fa-home"></i></button>
+          </a>
+          <div class="artsnav">
+            <a href="#visual">3D</a>
+            <a href="#logos">Logos</a>
+            <a href="#posters">Posters</a>
+            <a href="#photography">Photography</a>
+          </div>
+        </nav>
 
-    <div class="portfolio">
-      <a href="./portfolio.html"> Portfolio </a>
+        <div class="intro">
+          <h1>WELCOME.</h1>
+        </div>
+
+        <div class="visualizations" id="visual">
+          <h2>3D visualizations</h2>
+          <img src="./portfolio/3.png" alt="3D objects" />
+          <img src="./portfolio/4.png" alt="3D robot" />
+          <img
+            src="./portfolio/JUSTINA_TALALAITE_POSTER.jpg"
+            alt="3D robot poster"
+          />
+          <img src="./portfolio/black walls2.jpg" alt="3D stage" />
+        </div>
+
+        <div class="visualizations" id="logos">
+          <h2>Logos</h2>
+          <img src="./portfolio/barcel.jpg" alt="barcelos logo" />
+          <img src="./portfolio/b1.jpg" alt="barcelos logo" />
+          <img src="./portfolio/mug-01a.jpg" alt="3D stage" />
+        </div>
+
+        <div class="visualizations" id="posters">
+          <h2>Posters</h2>
+          <img src="./portfolio/poster.jpg" alt="barcelos logo" />
+        </div>
+
+        <div class="visualizations" id="photography">
+          <h2>Photography</h2>
+          <img src="./portfolio/1.jpg" alt="foto" />
+          <img src="./portfolio/2.jpg" alt="foto" />
+        </div>
+      </div>
     </div>
-
-    <div class="cv">
-      <a href="https://www.talalaite.com/"> CV </a>
-    </div>
-
-    <img src="portfolio\3.png" alt="3D Max artwork" />
   </body>
 </html>
