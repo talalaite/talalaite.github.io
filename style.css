@@ -26,7 +26,8 @@ body {
   align-items: center;
 }
 
-.card {
+.card,
+.cv_card {
   background-color: rgba(27, 6, 39, 0.815);
   transform-style: preserve-3d;
   width: 30rem;
@@ -34,6 +35,11 @@ body {
   padding: 1rem 3rem;
   box-shadow: 10px 10px 10px rgba(4, 1, 31, 0.185);
   transition: all 1s ease-out;
+}
+
+/* cv page */
+.cv_card {
+  padding-top: 3rem;
 }
 
 .logo {
@@ -121,15 +127,48 @@ body {
 }
 
 /* cv page */
+.home {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  color: rgb(15, 1, 15);
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* cv page */
+.home:hover {
+  background-color: rgb(255, 0, 157);
+  color: white;
+}
+
+/* cv page */
 .pink :hover {
   background-color: rgb(255, 0, 157);
   color: white;
 }
 
+/* cv page */
 div > .number > a {
   background-color: rgba(250, 174, 221, 0.945);
   border-radius: 30px;
   cursor: text;
+}
+
+/* cv page */
+.all {
+  animation-name: opacity;
+  animation-duration: 4s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 600px) {
